@@ -184,10 +184,10 @@ ClusterRecomendation/
 │   ├── spotify_scaler.pkl        # Saved scaler
 │   └── Spotify_data.csv          # Dataset copy for UI if needed
 ├── main.py                       # Optional main entry file
-├── train.py                      # ML training script
+├── pyproject.toml                # Project config 
 ├── README.md                     # Project documentation
 ├── requirements.txt              # Python dependencies
-└── pyproject.toml                # Project config
+└── train.py                      # Ml training File
 ```
 
 ---
@@ -221,3 +221,4 @@ ClusterRecomendation/
  Author
 
 Podmaraj Boruah
+
