@@ -1,0 +1,175 @@
+/* ===========================
+   General Body & Font
+=========================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121212;
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0;
+}
+
+/* ===========================
+   Header
+=========================== */
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(90deg, #1DB954, #14833b);
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+}
+
+/* ===========================
+   Sidebar
+=========================== */
+.stSidebar {
+    background: #1c1c1c;
+    color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(87, 83, 83, 0.3);
+}
+
+/* ===========================
+   Slider Styling (Age & Recommendation)
+=========================== */
+.stSidebar .stSlider > div[data-baseweb="slider"] {
+    background: #eaf0ec !important; /* green track */
+}
+
+.stSlider > div[data-baseweb="slider"] input:focus,
+.stSlider > div[data-baseweb="slider"] input {
+    background: #ffffff !important; /* slider thumb/box white */
+    border-radius: 10px !important;
+    color: #000000 !important; /* value text black */
+    font-weight: 600;
+}
+
+/* ===========================
+   Select Boxes
+=========================== */
+.stSidebar .stSelectbox > div[data-baseweb="select"] {
+    border-radius: 10px;
+    background: #2a2a2a; /* dark input */
+    color: #ffffff;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+.stSidebar .stSelectbox:hover {
+    transform: scale(1.03);
+}
+
+/* ===========================
+   Glow Cards
+=========================== */
+@keyframes glow-low { 
+    0%,100% { box-shadow: 0 0 10px #1DB954; } 
+    50% { box-shadow: 0 0 25px #1DB954; } 
+}
+@keyframes glow-medium { 
+    0%,100% { box-shadow: 0 0 10px #ffc107; } 
+    50% { box-shadow: 0 0 25px #ffc107; } 
+}
+@keyframes glow-high { 
+    0%,100% { box-shadow: 0 0 10px #ff3860; } 
+    50% { box-shadow: 0 0 30px #ff3860; } 
+}
+
+.glow-low, .glow-medium, .glow-high {
+    border-radius: 15px;
+    padding: 25px;
+    background: #1c1c1c;
+    color: #ffffff;
+    text-align: center;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.glow-low { animation-name: glow-low; }
+.glow-medium { animation-name: glow-medium; }
+.glow-high { animation-name: glow-high; }
+
+/* ===========================
+   Retention Card
+=========================== */
+.retention-card {
+    border-radius: 15px;
+    padding: 20px;
+    background: #1c1c1c;
+    color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    animation: slide-fade 1s ease-out;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+.stButton button {
+    background: linear-gradient(90deg, #1DB954, #14833b);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    cursor: pointer !important;
+}
+
+.stButton button:hover {
+    background: linear-gradient(90deg, #14833b, #1DB954);
+    transform: scale(1.05);
+}
+
+/* ===========================
+   Footer
+=========================== */
+.footer {
+    text-align: center;
+    padding: 15px;
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+/* ===========================
+   Cursor for Interactive Widgets
+=========================== */
+div[data-baseweb="select"] input,
+div[data-baseweb="select"] div,
+div[data-baseweb="slider"] input,
+div[data-baseweb="slider"] div,
+textarea,
+input,
+button {
+    cursor: pointer !important;
+}
+
+input[type="text"], textarea {
+    cursor: text !important;
+}
+
+/* ===========================
+   Misc Enhancements
+=========================== */
+h2, h3 {
+    font-weight: 600;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+a {
+    color: #1DB954;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
